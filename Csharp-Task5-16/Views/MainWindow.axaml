@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Csharp_Task5_16.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Height="1050"
+        Width="900"
+        Title="Csharp_Task5_16">
+
+        <Grid ColumnDefinitions="Auto, Auto, Auto, Auto" RowDefinitions="Auto,Auto,Auto,Auto,Auto" Margin="4">
+                <!-- create class buttons -->
+                <Grid Grid.Column="0" Grid.Row="0" Width="270" ColumnDefinitions="Auto, Auto">
+                        <TextBox Name="TBAddDeskLamp" Grid.Column="0" Width="150" Height="5" Watermark="Название модели"/>
+                        <Button Grid.Column="1" Width="120" Click="ButtonAddDeskLamp">Add DeskLamp</Button>
+                </Grid>
+                <Grid Grid.Column="0" Grid.Row="1" Width="270" ColumnDefinitions="Auto, *, *">
+                        <TextBox Name="TBAddChandelier" Grid.Column="0" Width="150" Height="5" Watermark="Название модели"/>
+                        <Button Grid.Column="1" Width="120" Click="ButtonAddChandelier">Add Chandelier</Button>
+                </Grid>
+                <Grid Grid.Column="0" Grid.Row="2" Width="270" ColumnDefinitions="Auto, *, *">
+                        <TextBox Name="TBAddFloorLamp" Grid.Column="0" Width="150" Height="5" Watermark="Название модели"/>
+                        <Button Grid.Column="1"  Width="120" Click="ButtonAddFloorLamp">Add FloorLamp</Button>
+                </Grid>
+                <!-- list class buttons -->
+                <Grid Name="GridListClasses" Grid.Row="0" Grid.Column="1" ColumnDefinitions="Auto,*" RowDefinitions="Auto,*,*,*,*,*,*,*,*,*,*,*,*,*">
+                </Grid>
+                <!-- methods buttons -->
+                <Grid Name="GridMethods" Grid.Row="0" Grid.Column="2" RowDefinitions="Auto, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *">
+                </Grid>
+                <!-- complete method buttons -->
+                <Grid Name="GridCompleteMethod" Grid.Row="0" Grid.Column="3" RowDefinitions="Auto, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *">
+                </Grid>
+                <TextBox Name="TextBlockStat" Height="150" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3"></TextBox>
+                <Button Click="ButtonSubmitMethod" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4">Выполнить</Button>
+        </Grid>
+</Window>
