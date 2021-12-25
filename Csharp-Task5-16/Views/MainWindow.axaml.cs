@@ -115,7 +115,7 @@ namespace Csharp_Task5_16.Views
             textBlockOut.Text = "”спешно! \n" + ret;
         }
 
-        private void ButtonEnableClass(object? sender, RoutedEventArgs e) //нажата€ кнопка класса
+        private void ButtonEnableClass(object? sender, RoutedEventArgs e) //нажата€ кнопка экземпл€ра класса
         {
             var thisButton = (Button)sender!;
             var lamp = (Lamp)lamps[(int)thisButton.CommandParameter];
